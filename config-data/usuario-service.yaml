@@ -1,5 +1,5 @@
 server:
-  port: 5001
+  port: ${random.int(8000,9999)}
 eureka:
   client:
     fetchRegistry: true
