@@ -25,3 +25,7 @@ spring:
         uri: lb://moto-service
         predicates:
         - Path=/moto/**
+    discovery:
+      locator:
+        enabled: true
+        lower-case-service-id: true
