@@ -14,7 +14,7 @@ spring:
     gateway:
       routes:
       - id: usuario-service
-        uri: lb://localhost:8001/
+        uri: http://localhost:8001/
         predicates:
         - Path=/usuario/**
       - id: carro-service
