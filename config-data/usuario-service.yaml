@@ -1,6 +1,8 @@
 server:
   port: ${random.int(8000,9999)}
 eureka:
+  instance:
+    preferIpAddress: true
   client:
     fetchRegistry: true
     registerWithEureka: true
