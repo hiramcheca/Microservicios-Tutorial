@@ -12,6 +12,10 @@ eureka:
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
       routes:
       - id: usuario-service
         uri: lb://usuario-service
@@ -25,7 +29,3 @@ spring:
         uri: lb://moto-service
         predicates:
         - Path=/moto/**
-    discovery:
-      locator:
-        enabled: true
-        lower-case-service-id: true
