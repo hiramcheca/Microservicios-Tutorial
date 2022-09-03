@@ -21,7 +21,6 @@ spring:
         uri: lb://usuario-service
         predicates:
         - Path=/usuario/**
-        - Host=localhost
       - id: carro-service
         uri: lb://carro-service
         predicates:
